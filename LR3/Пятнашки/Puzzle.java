@@ -5,9 +5,9 @@ import java.lang. *;
 public class Puzzle{
     public static void main(String[] args){
         //решаемая позиция
-        int[][] blocks = new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 0}};
+        //int[][] blocks = new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 0}};
         //нерешаемая позиция
-        //int[][] blocks = new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 15, 14, 0}};
+        int[][] blocks = new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 15, 14, 0}};
         if(canSolve(blocks)){
             System.out.println("Can be solved");
             Pieces initial = new Pieces(blocks);
